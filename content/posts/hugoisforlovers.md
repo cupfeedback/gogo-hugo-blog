@@ -1,5 +1,5 @@
 +++
-title = "Getting Started with Hugo"
+title = "첫번째 포스팅 테스트"
 description = ""
 tags = [
     "go",
@@ -7,13 +7,17 @@ tags = [
     "hugo",
     "development",
 ]
-date = "2014-04-02"
+date = "2023-11-21"
 categories = [
     "Development",
     "golang",
 ]
 menu = "main"
 +++
+
+## Step 0. 호기심, 열정, 그리고 실행!
+
+go 언어 배우고 싶다!
 
 ## Step 1. Install Hugo
 
