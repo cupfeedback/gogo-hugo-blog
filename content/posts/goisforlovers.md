@@ -1,5 +1,5 @@
 +++
-title = "(Hu)go Template Primer"
+title = "0번째 포스팅 테스트"
 description = ""
 tags = [
     "go",
@@ -8,13 +8,16 @@ tags = [
     "themes",
     "development",
 ]
-date = "2014-04-02"
+date = "2023-11-21"
 categories = [
     "Development",
     "golang",
 ]
 menu = "main"
 +++
+
+## 음...
+static blog...
 
 Hugo uses the excellent [Go][] [html/template][gohtmltemplate] library for
 its template engine. It is an extremely lightweight engine that provides a very
