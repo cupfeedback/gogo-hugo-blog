@@ -1,6 +1,6 @@
 baseURL = 'https://cupfeedback.github.io/gogo-hugo-blog/'
 languageCode = 'en-us'
-title = 'gogo-hugo-blog'
+title = 'cupfeedback-hugo-blog'
 
 [module]
 [[module.imports]]
