@@ -1,3 +1,20 @@
++++
+title = "creating-a-new-theme"
+description = ""
+tags = [
+    "go",
+    "golang",
+    "hugo",
+    "development",
+]
+date = "2020-01-01"
+categories = [
+    "Development",
+    "golang",
+]
+menu = "main"
++++
+
 ---
 author: "cupfeedback"
 date: 2020-01-21
