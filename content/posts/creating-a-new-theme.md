@@ -15,18 +15,18 @@ categories = [
 menu = "main"
 +++
 
----
-author: "cupfeedback"
-date: 2020-01-21
-linktitle: Creating new theme
-menu:
-  main:
-    parent: tutorials
-next: /tutorials/github-pages-blog
-prev: /tutorials/automated-deployments
-title: Creating a New Theme
-weight: 10
----
+	---
+	author: "cupfeedback"
+	date: 2020-01-21
+	linktitle: Creating new theme
+	menu:
+	  main:
+	    parent: tutorials
+	next: /tutorials/github-pages-blog
+	prev: /tutorials/automated-deployments
+	title: Creating a New Theme
+	weight: 10
+	---
 
 
 ## Introduction
