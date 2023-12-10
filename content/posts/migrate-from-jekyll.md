@@ -1,13 +1,31 @@
----
-date: 2019-01-19
-linktitle: migrate from jekyll
-menu:
-  main:
-    parent: tutorials
-prev: /tutorials/mathjax
-title: Migrate to Hugo from Jekyll
-weight: 10
----
++++
+title = "migrate from jekyll"
+description = ""
+tags = [
+    "go",
+    "golang",
+    "hugo",
+    "development",
+]
+date = "2019-01-01"
+categories = [
+    "Development",
+    "golang",
+]
+menu = "main"
++++
+
+  
+    > ---
+    > date: 2019-01-01
+    > linktitle: migrate from jekyll
+    > menu:
+    >  main:
+    >    parent: tutorials
+    > prev: /tutorials/mathjax
+    > title: Migrate to Hugo from Jekyll
+    > weight: 10
+    > ---
 
 
 ## Move static content to `static`
