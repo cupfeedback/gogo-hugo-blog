@@ -1,5 +1,5 @@
 +++
-title = "0번째 포스팅 테스트"
+title = "go is for lovers"
 description = ""
 tags = [
     "go",
@@ -8,7 +8,7 @@ tags = [
     "themes",
     "development",
 ]
-date = "2023-11-17"
+date = "2022-01-01"
 categories = [
     "Development",
     "golang",
@@ -16,7 +16,7 @@ categories = [
 menu = "main"
 +++
 
-## 음...
+## Intro...
 static blog...
 
 Hugo uses the excellent [Go][] [html/template][gohtmltemplate] library for
