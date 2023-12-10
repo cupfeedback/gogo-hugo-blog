@@ -1,7 +1,7 @@
 ---
 author: "cupfeedback"
-date: 2023-11-21
-linktitle: 세 번째 포스팅 테스트
+date: 2022-01-21
+linktitle: Creating new theme
 menu:
   main:
     parent: tutorials
@@ -10,8 +10,7 @@ prev: /tutorials/automated-deployments
 title: Creating a New Theme
 weight: 10
 ---
-## 안녕하세요. 
-아아 안녕하세용?
+
 
 ## Introduction
 
