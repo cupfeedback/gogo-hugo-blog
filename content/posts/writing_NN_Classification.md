@@ -17,10 +17,14 @@ menu = "main"
 
 # Intro
 Neural Network 를 sklearn이나 pytorch, tensorflow 등 라이브러리 활용해서 짜는 것도 있지만 직접 A부터 Z까지 짜는 과정에 대해서 기록합니다.
+
+
 요즘에는 Andrew Ng 교수님 Deep Learning 과정을 듣고 있습니다. 
 퀴즈나 과제 풀고 제출해야 하는 과정인데 주말마다 듣고 있습니다. 
 인상깊었던 부분은 tensorflow를 구글에서 만드셔서 그런지 과제도 전부 직접 만드는 걸 내주십니다. 
 예전에 python을 몰랐던 때 이것저것 해보다가... 과제 푼 것 중에 python의 기본 내장 set 클래스를 직접 구현해보라고 했던 과제가 있었는데, 그 과제 풀었을 때가 생각나기도 합니다.
+
+
 데이터는 따로 없지만,
 sudo 코드로 어떻게 분류 과제를 neural network로 구현하는지 기록하겠습니다.
 
@@ -28,24 +32,26 @@ sudo 코드로 어떻게 분류 과제를 neural network로 구현하는지 기�
 Dataset을 불러옵니다.
 라이브러리는 간단하게 numpy 정도?
 
-  import numpy as np
-  import copy
+      import numpy as np
+      import copy
 
-  X, Y = load_dataset() # 해당되는 데이터셋트 불러오기
+      X, Y = load_dataset() # 해당되는 데이터셋트 불러오기
 
 그리고 형태를 확인
-  X.shape
-  Y.shape
+
+
+      X.shape
+      Y.shape
 
 
 # 2. Neural Network Model 시작
- 다음을 구현할 예정입니다 $x^{(i)}$:
-  $$z^{[1] (i)} =  W^{[1]} x^{(i)} + b^{[1]}\tag{1}$$ 
-  $$a^{[1] (i)} = \tanh(z^{[1] (i)})\tag{2}$$
-  $$z^{[2] (i)} = W^{[2]} a^{[1] (i)} + b^{[2]}\tag{3}$$
-  $$\hat{y}^{(i)} = a^{[2] (i)} = \sigma(z^{ [2] (i)})\tag{4}$$
-  
-  $$y^{(i)}_{prediction} = \begin{cases} 1 & \mbox{if } a^{[2](i)} > 0.5 \\ 0 & \mbox{otherwise } \end{cases}\tag{5}$$
+     다음을 구현할 예정입니다 $x^{(i)}$:
+      $$z^{[1] (i)} =  W^{[1]} x^{(i)} + b^{[1]}\tag{1}$$ 
+      $$a^{[1] (i)} = \tanh(z^{[1] (i)})\tag{2}$$
+      $$z^{[2] (i)} = W^{[2]} a^{[1] (i)} + b^{[2]}\tag{3}$$
+      $$\hat{y}^{(i)} = a^{[2] (i)} = \sigma(z^{ [2] (i)})\tag{4}$$
+      
+      $$y^{(i)}_{prediction} = \begin{cases} 1 & \mbox{if } a^{[2](i)} > 0.5 \\ 0 & \mbox{otherwise } \end{cases}\tag{5}$$
   
 hidden 레이어에는 하이퍼볼릭탄젠트 활성화 함수를 사용하고 출력 레이어에는 시그모이드 활성화 함수를 활용해서 1과 0이 출력되는데, 그 과정의 수식은 다음과 같습니다. 
 
@@ -163,13 +169,18 @@ gradient descent라고도 하죠. 어느 방향으로 learning rate 를 정해�
 
 이제 해당 모델에서 예측합니다.
 시그모이드 함수를 통과한 값이  0.5 이상이면 1, 0으로 찍어주면 예측값이 나오도록 
-    def predict 함수를 짭니다.
-        return 값은 numpy 값이 나오도록... 예를 들어 np.where(A2 > 0.5, 1, 0)
+
+        def predict 함수를 짭니다.
+            return 값은 numpy 값이 나오도록... 예를 들어 np.where(A2 > 0.5, 1, 0)
 
 
 # 11. 마무리
 sudo 코드 로 짠 Neural Network 코드로 분류 과제하기 였습니다.
-모든 수학적 수식을 코드로 구현한 뒤에 굴리는 과정인데, 직접 해보면 재밌습니다. (그런데 실무에서는 라이브러리 적극 활용)
+
+모든 수학적 수식을 코드로 구현한 뒤에 굴리는 과정인데, 직접 해보면 재밌습니다. 
+
+(그런데 실무에서는 라이브러리 적극 활용)
+
 끗.
 
 
