@@ -43,9 +43,9 @@ Serverless 프레임워크는 AWS Lambda, Azure Functions, Google Cloud Function
 
 이 프레임워크는 인프라를 코드(IaC) 방식으로 관리하여, 개발자가 인프라 설정에 드는 시간과 노력을 크게 줄여줍니다.
 
-''' 
-    serverless deploy
-'''
+
+        serverless deploy
+
 
 한 줄로 치켠 클라우드 환경에 배포됩니다. aws 뿐만 아니라. Azure 등에서도요. 
 
@@ -77,19 +77,25 @@ npm을 설치하는 방법은
 를 치면 됩니다.
 
 - serverless 를 npm을 통해 설치합니다
+  
 
     npm install -g serverless
 
+
     **에러가 난다면**
 
+
     sudo npm install -g serverless
+
 
     를 쳐서 권한을 sudo 권한으로 줍니다.
 
 -  이제 serverless 프로젝트를 생성하면 됩니다.
 예시 코드를 받아서 생성하고, AWS 인증 정보를 입력했었습니다.
 
-  serverless create -t aws-go-mod -p myservice
+
+      serverless create -t aws-go-mod -p myservice
+
 
 1. serverless create: 이것은 Serverless 프레임워크의 'create' 명령을 호출합니다. 이 명령은 새로운 Serverless 서비스나 애플리케이션을 초기화하는 데 사용됩니다.
 
@@ -109,16 +115,18 @@ serverless create -t aws-go-mod -p myservice 명령은
 
 그 다음 해당 폴더로 이동해줍니다.
 
-'''
-  cd myservice
-  make
-'''
+
+      cd myservice
+      make
+
+
 
 추가로 aws-lamda-go 모듈을 다운로드 했습니다. 
 
-'''
-  go mod download github.com/aws/aws-lambda-go
-'''
+
+      go mod download github.com/aws/aws-lambda-go
+
+
 
 1. go mod: 이것은 Go 언어의 모듈 관리 시스템을 사용하는 명령입니다. Go 1.11 버전 이후로 도입된 이 시스템은 Go 프로젝트의 의존성 관리를 단순화하고 표준화합니다.
 
@@ -132,39 +140,39 @@ AWS Lambda를 위한 Go 언어 라이브러리는 AWS에서 Lambda 함수를 쉽
   
 -  배포
 
-'''
-    make
-    sls deply
-'''
+
+        make
+        sls deply
+
 
 - 참고로 중간에 AWS credential 인증도 해야 합니다. aws 설정에 들어가서 확인할 수 있습니다.
 
 다음의 에러가 난다면 해당 사이트로 들어가세요
 
-    [~][myservice][%][24-02-04][19:07] serverless deploy
+        [~][myservice][%][24-02-04][19:07] serverless deploy
     
-    Deploying myservice to stage dev (us-east-1)
-    
-    ✖ Stack myservice-dev failed to deploy (2s)
-    Environment: darwin, node 18.16.0, framework 3.38.0, plugin 7.2.0, SDK 4.5.1
-    Docs:        docs.serverless.com
-    Support:     forum.serverless.com
-    Bugs:        github.com/serverless/serverless/issues
-    
-    Error:
-    AWS provider credentials not found. Learn how to set up AWS provider credentials in our docs here: <http://slss.io/aws-creds-setup>.
+        Deploying myservice to stage dev (us-east-1)
+        
+        ✖ Stack myservice-dev failed to deploy (2s)
+        Environment: darwin, node 18.16.0, framework 3.38.0, plugin 7.2.0, SDK 4.5.1
+        Docs:        docs.serverless.com
+        Support:     forum.serverless.com
+        Bugs:        github.com/serverless/serverless/issues
+        
+        Error:
+        AWS provider credentials not found. Learn how to set up AWS provider credentials in our docs here: <http://slss.io/aws-creds-setup>.
 
 특정 함수만 빠르게 배포하고 싶다면
 
-    make
-    sls deploy function --function 함수 이름
+        make
+        sls deploy function --function 함수 이름
 
 
 - 호출
 
-    # Endpoint 호출
-    curl -XGET $endpoint
-    curl -XPOST $endpoint -H "Content-Type: text/plain" -d '$입력할 내용'
+        # Endpoint 호출
+        curl -XGET $endpoint
+        curl -XPOST $endpoint -H "Content-Type: text/plain" -d '$입력할 내용'
 
 
 참고로 테스트한 go 파일은 하단 serverless 배포를 발표해주신 발표자 분의 깃허브 링크에 있습니다.
