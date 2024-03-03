@@ -63,8 +63,7 @@ Schraw(1998)는 메타인지를 인지의 지식과 인지의 조절(Regulation 
 메타인지와 관련된 이전 연구들에서는 메타인지적 조절 기술들을 크게 세 가지로 구분해 볼 수 있다고 주장한다(Jacobs & Paris, 1987; Schraw, 1998). 계획(planning), 감시(monitoring)(Schraw, 1998) 혹은 조절(regulation)(Jacobs & Paris, 1987), 평가(evaluation)이다. 계획은 적절한 전략들을 선택하고 주의 자원을 분배하는 것을 말한다. 감시 혹은 조절은 이해력과 과제 수행 진행 상황에 대해서 인식하는 것이다. 그리고 계획과 전략들이 어떻게 잘 사용할지에 대해서 조정하고 변경하는 것이다. 평가는 스스로 학습의 효율성과 결과물에 대해서 평가해보는 것이다. 이러한 조절 기술들에 대해서 예시는 King(1991)이 아동들의 학습 능력을 높이기 위해서 개발한 조절 체크리스트(regulatory checklist; RC)에서 알아볼 수 있다. King의 체크리스트는 계획, 감시, 평가, 각 항목당 체크리스트가 4가지씩 들어가 있다.
 
 
-![metacognitive_1](https://github.com/cupfeedback/gogo-hugo-blog/blob/main/content/posts/metacognitive_1.png)
-
+![Metacognitive 1](https://raw.githubusercontent.com/cupfeedback/gogo-hugo-blog/main/content/posts/metacognitive_1.png "Metacognitive 1")
 
 
 # 메타 인지와 집행 통제
@@ -106,8 +105,7 @@ Norman과 Sahllice(1986) 모형에서는 집행적 시스템이 도식에 미치
 즉 이러한 메타인지적 그리고 집행적 통제는 특정 목표를 획득하는데 필요한 도식이 없을 때 행동을 적절할 수 있도록 한다. 의사 결정, 문제 해결, 전략 선택, 비일상적인 행동의 수행을 하는데 두 모델 모두 필수적이다(Fernandez-Duque et al., 2000).
 
 
-![metacognitive_2](https://github.com/cupfeedback/gogo-hugo-blog/blob/main/content/posts/metacognitive_2.png)
-
+![Metacognitive 2](https://raw.githubusercontent.com/cupfeedback/gogo-hugo-blog/main/content/posts/metacognitive_2.png "Metacognitive 2")
 
 
 ## 2) 메타 인지와 작업 기억
